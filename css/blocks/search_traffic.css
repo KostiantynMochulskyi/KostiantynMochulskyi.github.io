@@ -1,0 +1,208 @@
+.top-search {
+  background-color: white;
+  color: #777777;
+  box-shadow: 0px 0px 5px 0px rgba(12, 16, 14, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  min-width: 605px;
+  flex-grow: 1; }
+
+.top-search__container {
+  display: flex;
+  position: relative; }
+  .top-search__container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+    top: 0;
+    left: 0; }
+
+.top-search__bigMap {
+  padding: 20px 10px;
+  position: relative;
+  display: flex;
+  flex-grow: 1; }
+
+.top-search__wrapperBtn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+
+.top-search__bigMap-plus {
+  display: flex;
+  width: 25px;
+  height: 26px;
+  border: 1px solid #e8e8e8;
+  cursor: pointer; }
+  .top-search__bigMap-plus:hover {
+    opacity: 0.5; }
+
+.top-search__bigMap-plus-img {
+  margin: auto; }
+
+.top-search__bigMap-minus {
+  display: flex;
+  width: 25px;
+  height: 26px;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  cursor: pointer; }
+  .top-search__bigMap-minus:hover {
+    opacity: 0.5; }
+
+.top-search__bigMap-minus-img {
+  margin: auto; }
+
+.top-search__bigMap-img {
+  margin: auto; }
+
+.top-search__smallMaps {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .top-search__smallMaps::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #e8e8e8;
+    left: 0;
+    top: 0; }
+
+.top-search__smallMaps-item {
+  display: flex;
+  position: relative;
+  padding-left: 10px; }
+  .top-search__smallMaps-item::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #e8e8e8;
+    left: 0;
+    top: 0; }
+
+.top-search__smallMaps-imageBlock {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  display: flex; }
+
+.top-search__smallMaps-image {
+  margin: auto; }
+
+.top-search__smallMaps-textBlock {
+  display: flex;
+  flex-direction: column;
+  width: 73px;
+  height: 70px;
+  padding-right: 10px; }
+
+.top-search__smallMaps-textWrapper {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column; }
+
+.top-search__smallMaps-text {
+  margin: 0 auto;
+  font-family: "latolight", "Arial", sans-serif;
+  font-size: 14px;
+  color: #777777;
+  line-height: 18px; }
+
+.top-search__smallMaps-number {
+  margin: 0 auto;
+  font-family: "latobold", "Arial", sans-serif;
+  font-size: 16px;
+  color: #777777;
+  line-height: 20px; }
+
+.traffic-sources {
+  background-color: white;
+  color: #777777;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0px rgba(12, 16, 14, 0.2);
+  flex-grow: 1;
+  min-height: 406px;
+  min-width: 243px; }
+
+.traffic-sources__block {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-grow: 1; }
+  .traffic-sources__block::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+    top: 0;
+    left: 0; }
+
+.traffic-sources__item {
+  display: flex;
+  margin: auto 0;
+  align-items: center;
+  padding: 0 10px; }
+
+.traffic-sources__item-firstBlock {
+  margin: 0;
+  color: #ffffff;
+  border-radius: 13px;
+  display: flex;
+  height: 26px;
+  min-width: 70px;
+  margin: 0 auto; }
+
+.traffic-sources__item-text {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "latoregular", "Arial", sans-serif;
+  padding: 5px;
+  margin: auto; }
+
+.traffic-sources__item--direct {
+  background-color: #3366ff; }
+
+.traffic-sources__item--refer {
+  background-color: #00cccc; }
+
+.traffic-sources__item--social {
+  background-color: #f1a80a; }
+
+.traffic-sources__item--search {
+  background-color: #85c875; }
+
+.traffic-sources__item--internal {
+  background-color: #ff6633; }
+
+.traffic-sources__item-secondBlock {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "latobold", "Arial", sans-serif;
+  color: #777;
+  margin: 0 auto; }
+
+.traffic-sources__item-thirdBlock {
+  margin: 0 auto;
+  display: flex; }
+
+.traffic-sources__item-thirdBlock canvas {
+  margin: auto 0; }
+
+.traffic-sources__block--inactive {
+  display: none; }
+
+.top-search-container--inactive {
+  display: none; }
+
+.traffic-sources--no-height {
+  min-height: auto; }

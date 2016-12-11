@@ -1,0 +1,136 @@
+@import "../mixins.scss";
+
+.graph{
+	background-color: white;
+	color: #777777;
+	@include shadow;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+.graph-container{
+	margin: 0px auto;
+}
+.graph__block{
+	height: 245px;
+	position: relative;
+	margin-left: 83px;
+	margin-right: 20px;
+	width: 793px;
+	margin-bottom: 70px;
+}
+.graph__backgroundGrid{
+	position: absolute;
+	width: 793px;
+	height: 245px;
+	background: url("../img/sprite/graph.png") no-repeat;
+	z-index: 10;
+}
+.graph__left-textBlock{
+	position: absolute;
+	bottom: -5px;
+	left: -50px;	
+}
+.graph__left-textItem{
+	text-align: right;
+	margin: 0;
+	margin-top: 50px;
+	font-size: 11px;
+	line-height: 11px;
+	color: #777777;
+	font-family: "latoregular", "Arial", sans-serif;
+}
+.graph__down-textBlock{
+	display: flex;
+	position: absolute;
+	bottom: -25px;
+	left: -5px;
+}
+.graph__down-textItem{
+	margin: 0;
+	margin-right: 53px;
+	font-size: 11px;
+	line-height: 11px;
+	color: #777777;
+	font-family: "latoregular", "Arial", sans-serif;
+	&:last-of-type{
+		margin: 0;
+	}
+}
+.graph__items{
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
+}
+.firstPath{
+	fill: #0bc4df;
+}
+.secondPath{
+	fill: #f1a80a;
+}
+.thirdPath{
+	fill: #1e75eb;
+}
+.fourthPath{
+	fill: #85c875;
+}
+.graph-container--inactive{
+	display: none;
+}
+.graph__footer{
+	display: flex;
+	padding-left: 83px;
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: #d9d5d5;
+		left: 0;
+	}
+}
+.graph__footer-item{
+	margin: 20px 0px;
+	padding-left: 40px;
+	position: relative;
+	margin-right: 100px;
+	&:last-of-type{
+		margin: 20px 0;
+	}
+	&::before{
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 4px;
+		bottom: 0;
+		left: 20px;
+	}
+	&:first-of-type::before{
+		background-color: #99cc66;
+	}
+	&:nth-of-type(2)::before{
+		background-color: #f1a80a;
+	}
+	&:nth-of-type(3)::before{
+		background-color: #00cccc;
+	}
+	&:last-of-type::before{
+		background-color: #3366ff;
+	}
+}
+.graph__footer-number{
+	color: #5c636c;
+	font-size: 18px;
+	font-family: "latobold", "Arial", sans-serif;
+	line-height: 16px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.graph__footer-text{
+	color: #a5acb4;
+	font-size: 18px;
+	font-family: "latolight", "Arial", sans-serif;
+	line-height: 16px;
+	margin: 0;
+}

@@ -1,0 +1,51 @@
+.headerBlocks{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.headerBlocks-text{
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: "latobold", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	color: #777777;
+}
+.headerBlocks-blockBtn{
+	display: flex;
+}
+.headerBlocks-btnItem1{
+	cursor: pointer;
+	margin-right: 20px;
+	width: 16px;
+	height: 16px;
+	background: url("../img/sprite/refresh.png") no-repeat;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+.headerBlocks-btnItem2{
+	cursor: pointer;
+	margin-top: 5px;
+	margin-right: 20px;
+	width: 15px;
+	height: 9px;
+	background: url("../img/sprite/arrow.png") no-repeat;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+.headerBlocks-btnItem3{
+	cursor: pointer;
+	width: 13px;
+	height: 13px;
+	background: url("../img/sprite/close-graph.png") no-repeat;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+.headerBlocks-btnItems--rotate{
+	transform: rotate(180deg);
+	margin-top: 3px;
+}

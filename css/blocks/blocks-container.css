@@ -1,0 +1,9 @@
+.blocks-container {
+  display: flex;
+  margin-bottom: 25px; }
+  .blocks-container:last-of-type {
+    margin: 0;
+    padding-bottom: 25px; }
+
+.blocks-container--align-start {
+  align-items: flex-start; }
