@@ -1,0 +1,215 @@
+.slider {
+    @include container;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slider__header {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: "latoregular", Arial, sans-serif;
+}
+
+.slider__item-list {
+    font-size: 0;
+    padding-left: 35px;
+}
+
+.slider__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 530px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.slider__item-image {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 195px;
+    height: 225px;
+    margin: 0 35px;
+}
+
+.slider__item-content {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/*.slider__item-stars-list {
+	font-size: 0;
+	@include no-list;
+	margin-bottom: 10px;
+}
+
+.slider__item-star {
+	display: inline-block;
+	vertical-align: top;
+}
+.slider__item-star-svg{
+	fill: #bbbbbb;
+}
+.slider__item-star-svg--fill{
+	fill: #ffaa00;
+}*/
+
+.slider__rating-holder {
+    width: 76px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.slider__passive-rating-holder {
+    position: relative;
+    width: 76px;
+    height: 14px;
+    left: 0;
+    display: block;
+}
+
+.slider__ratingBg {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 76px;
+	background-image: url("../img/star-no-active76x14.svg");
+	width: 76px;
+	z-index: 1;
+}
+
+.slider__ratingMask {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 76px;
+    background-image: url("../img/star-active76x14.svg");
+	width: 76px;
+	z-index: 99;
+}
+
+.slider__item-text {
+    margin-bottom: 20px;
+}
+
+.slider__item-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "latoregular", Arial, sans-serif;
+    line-height: 30px;
+    color: $color-header;
+}
+
+.slider__item-buttons {
+    font-size: 0;
+}
+
+.slider__item-buttons a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 14px;
+}
+
+.slider__item-addBtn {
+    padding: 6px 0;
+    padding-right: 10px;
+    padding-left: 36px;
+    border: 1px solid #ebebeb;
+    position: relative;
+    margin-right: 9px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 19px;
+        height: 14px;
+        background: url("../img/cart_item.jpg") no-repeat;
+        top: 50%;
+        margin-top: -7px;
+        left: 8px;
+    }
+    &:hover {
+        border-color: $color-blue;
+        cursor: pointer;
+    }
+}
+
+.slider__item-likeBtn {
+    padding: 16px 18px;
+    padding-bottom: 17px;
+    border: 1px solid #ebebeb;
+    position: relative;
+    margin-right: 9px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 14px;
+        background: url("../img/heart_item.jpg") no-repeat;
+        top: 50%;
+        margin-top: -7px;
+        left: 8px;
+    }
+    &:hover {
+        border-color: $color-blue;
+        cursor: pointer;
+    }
+}
+
+.slider__item-compareBtn {
+    padding: 16px 18px;
+    padding-bottom: 17px;
+    border: 1px solid #ebebeb;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 13px;
+        background: url("../img/arrow_item.jpg") no-repeat;
+        top: 50%;
+        margin-top: -7px;
+        left: 8px;
+    }
+    &:hover {
+        border-color: $color-blue;
+        cursor: pointer;
+    }
+}
+
+@media #{$desktop-widths} {
+    .slider {
+        width: $tablet-calc;
+    }
+}
+
+@media #{$tablet-widths} {
+    .slider {
+        width: $mobile-calc;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider__item-image {
+        margin: 0 5px;
+    }
+    .slider__item-content {
+        margin: 0 5px;
+        margin-top: 20px;
+    }
+}

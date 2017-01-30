@@ -1,0 +1,57 @@
+@mixin clearfix() {
+	&::after{
+	content: "";
+	display: table;
+	clear: both;
+	}
+}
+@mixin no-list() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@mixin container() {
+	width: 1170px;
+	margin: 0 auto;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+@mixin plus-minus() {
+	animation-name: rotate;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+@keyframes rotateBack {
+	0% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: rotate(-180deg);
+	}
+}
+@mixin minus-plus() {
+	animation-name: rotateBack;
+	animation-duration: 0.3s;
+}
+@keyframes translate {
+	0% {
+		top: 0px;		
+	}
+	50%{
+		top: 240px;
+	}
+	100% {
+		top: 145px;
+	}
+}
+@mixin up-down() {
+	animation-name: translate;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+}

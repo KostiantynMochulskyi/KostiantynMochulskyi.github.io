@@ -1,0 +1,127 @@
+.footer{
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: $color-blue;
+		top: 0;
+		left: 0;
+	}
+}
+.footer-wrapper{
+	padding-top: 35px;
+	@include container;
+	@include clearfix;
+	padding-bottom: 30px;
+}
+.footer__logotype-wrapper{
+	float: left;
+	margin-right: 135px;
+}
+.footer__logotype-block{
+	position: relative;
+}
+.footer__logotype{
+	display: inline-block;
+	vertical-align: top;
+	width: 257px;
+	height: 79px;
+}
+.footer__logotype-copyright{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: "latoregular", Arial, sans-serif;
+	color: $color-grey;
+}
+.footer__kontakt{
+	float: left;
+	margin-right: 155px;
+}
+.footer__information{
+	float: left;
+}
+.footer__kontakt-header, .footer__information-header{
+	text-transform: uppercase;
+	color: $color-header;
+	font-family: "latobold", Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.footer__kontakt-list, .footer__information-list{
+	@include no-list;
+}
+.footer__kontakt-item, .footer__information-item{
+	margin-bottom: 5px;
+}
+.footer__kontakt-link, .footer__information-link{
+	font-family: "latoregular", Arial, sans-serif;
+	color: $color-grey;
+	text-decoration: none;
+	font-size: 14px;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+.footer__kontakt-link--mail{
+	color: $color-blue;
+	font-family: "latobold", Arial, sans-serif;
+}
+@media #{$desktop-widths}{
+	.footer-wrapper{
+		width: $tablet-calc;
+	}
+	.footer__logotype-wrapper{
+		margin-right: 10%;
+	}
+	.footer__kontakt{
+		margin-right: 11.5%;
+	}
+}
+@media #{$tablet-widths}{
+	.footer-wrapper {
+		width: $mobile-calc;
+		text-align: center;
+	}
+	.footer__logotype-wrapper{
+		float: none;
+		margin-right: 0px;
+	}
+	.footer__logotype-block{
+		position: relative;
+		width: 257px;
+		margin: 0px auto;
+		margin-bottom: 40px;
+	}
+	.footer__kontakt{
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.footer__information{
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+}
+@media #{$mobile-widths}{
+	.footer-wrapper {
+		text-align: left;
+	}
+	.footer__kontakt{
+		margin: 0;
+		margin: 0 20px;
+		margin-bottom: 30px;
+	}
+	.footer__information{
+		margin: 0;
+		margin: 0 20px;
+	}
+}

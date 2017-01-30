@@ -1,0 +1,107 @@
+@charset "UTF-8";
+// Default Variables
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background-color: #7a7a7a;
+    top: -80px;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.slick-prev {
+    right: 44px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 14px;
+        background: url("../img/slider-arrow-l.svg");
+        top: 50%;
+        margin-top: -7px;
+        left: 50%;
+        margin-left: -4px;
+    }
+    &:hover {
+        background-color: $color-blue;
+        cursor: pointer;
+    }
+}
+
+.slick-next {
+    right: 0px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 14px;
+        background: url("../img/slider-arrow-r8x14.svg");
+        top: 50%;
+        margin-top: -7px;
+        left: 50%;
+        margin-left: -4px;
+    }
+    &:hover {
+        background-color: $color-blue;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px){
+    .slick-prev,
+    .slick-next {
+        top: -48px;
+    }
+    .slick-next {
+        right: calc(50% - 44px);
+    }
+    .slick-prev {
+        right: 50%;
+    }
+}

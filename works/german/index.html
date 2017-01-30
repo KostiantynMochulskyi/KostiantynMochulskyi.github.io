@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FishHunter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__top">
+            <div class="main-header__account">
+                <a href="#" class="main-header__account-link">My account</a>
+            </div>
+            <div class="main-header__cart">
+                <a href="#" class="main-header__cart-link">
+                    <span class="main-header__cart-name">My cart -</span>
+                    <span class="main-header__cart-total">$0.00</span>
+                </a>
+            </div>
+        </div>
+        <a class="main-header__logotype">
+            <img src="img/logo_var_m.png" srcset="img/logo_var_m2x.png 2x" alt="Logotype" width="161" height="49">
+        </a>
+        <nav class="main-header__nav">
+            <div class="main-header__nav-wrapper">
+                <a href="#" class="main-header__nav-plus"></a>
+                <ul class="main-header__nav-list">
+                    <li class="main-header__nav-item">
+                        <a href="#" class="main-header__nav-link">Home</a>
+                    </li>
+                    <li class="main-header__nav-item">
+                        <a href="#" class="main-header__nav-link">Bundesland</a>
+                    </li>
+                    <li class="main-header__nav-item">
+                        <a href="#" class="main-header__nav-link">Angelshop</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <man class="content-block">
+        <div class="search-block">
+            <form action="search" method="get" class="search-block__form">
+                <input type="search" id="search" name="search" placeholder="Enter your keyword..." class="search-block__form-input">
+                <button type="submit" class="search-block__btn">Suchen</button>
+            </form>
+        </div>
+        <div class="top">
+            <h2 class="top__header">Top Gewässer bei fangfinder</h2>
+            <div class="top__btn-wrapper">
+                <a href="#" class="top__btn  top__btn--active">Date created</a>
+                <a href="#" class="top__btn">Top rating</a>
+                <a href="#" class="top__btn">Most rewievs</a>
+            </div>
+            <div class="top__item-block">
+                <div class="top__list">
+                    <div class="top__item">
+                        <div class="top__item-img">
+                            <img src="img/top1.jpg" srcset="img/top1x2.jpg 2x" width="270" height="300" alt="img-item">
+                        </div>
+                        <div class="top__item-text">
+                            <div class="top__rating-holder">
+                                <div class="top__passive-rating-holder">
+                                    <div class="top__ratingBg"></div>
+                                    <div style="width: 0%;" class="top__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="top__item-text-wrapper">
+                                <p class="top__item-name">Volkspark Bokel</p>
+                                <p class="top__item-price">5,00 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__item">
+                        <div class="top__item-img">
+                            <img src="img/top2.jpg" srcset="img/top2x2.jpg 2x" width="270" height="300" alt="img-item">
+                        </div>
+                        <div class="top__item-text">
+                            <div class="top__rating-holder">
+                                <div class="top__passive-rating-holder">
+                                    <div class="top__ratingBg"></div>
+                                    <div style="width: 30%;" class="top__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="top__item-text-wrapper">
+                                <p class="top__item-name">Volkspark Bokel</p>
+                                <p class="top__item-price">5,00 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__item">
+                        <div class="top__item-img">
+                            <img src="img/top3.jpg" srcset="img/top3x2.jpg 2x" width="270" height="300" alt="img-item">
+                        </div>
+                        <div class="top__item-text">
+                            <div class="top__rating-holder">
+                                <div class="top__passive-rating-holder">
+                                    <div class="top__ratingBg"></div>
+                                    <div style="width: 100%;" class="top__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="top__item-text-wrapper">
+                                <p class="top__item-name">Volkspark Bokel</p>
+                                <p class="top__item-price">5,00 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__item">
+                        <div class="top__item-img">
+                            <img src="img/top4.jpg" srcset="img/top4x2.jpg 2x" width="270" height="300" alt="img-item">
+                        </div>
+                        <div class="top__item-text">
+                            <div class="top__rating-holder">
+                                <div class="top__passive-rating-holder">
+                                    <div class="top__ratingBg"></div>
+                                    <div style="width: 100%;" class="top__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="top__item-text-wrapper">
+                                <p class="top__item-name">Volkspark Bokel</p>
+                                <p class="top__item-price">5,00 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="regions">
+            <div class="regions__item">
+                <img src="img/region1.jpg" srcset="img/region1x2.jpg 2x" width="389" height="375" alt="region">
+                <div class="regions__item-hover">
+                    <div class="regions__item-hover-wrapper">
+                        <p class="regions__item-method">Fishing</p>
+                        <p class="regions__item-name">Regions</p>
+                        <a href="#" class="regions__item-btn">See all</a>
+                    </div>
+                </div>
+            </div>
+            <div class="regions__item">
+                <img src="img/region2.jpg" srcset="img/region2x2.jpg 2x" width="389" height="375" alt="region">
+                <div class="regions__item-hover">
+                    <div class="regions__item-hover-wrapper">
+                        <p class="regions__item-method">Fishing</p>
+                        <p class="regions__item-name">Regions</p>
+                        <a href="#" class="regions__item-btn">See all</a>
+                    </div>
+                </div>
+            </div>
+            <div class="regions__item">
+                <img src="img/region3.jpg" srcset="img/region3x2.jpg 2x" width="389" height="375" alt="region">
+                <div class="regions__item-hover">
+                    <div class="regions__item-hover-wrapper">
+                        <p class="regions__item-method">Fishing</p>
+                        <p class="regions__item-name">Regions</p>
+                        <a href="#" class="regions__item-btn">See all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="advantages__wave-bg">
+                <div class="advantages__hook-fish">
+                    <span class="advantages__hook-fish-finish">Finish!</span>
+                </div>
+            </div>
+            <div class="advantages-wrapper">
+                <h2 class="advantages__header">Der Einfache Weg Zur Angelkarte</h2>
+                <div class="advantages__wrapper">
+                    <div class="advantages__item">
+                        <div class="advantages__item-image">
+                            <img src="img/adven1.png" srcset="img/adven1x2.png 2x" width="85" height="85" alt="advantages">
+                        </div>
+                        <div class="advantages__item-content">
+                            <h3 class="advantages__item-header">REGISTRIEREN</h3>
+                            <p class="advantages__item-text">Einfach registrieren mit Facebook, Google oder E-Mail-Adresse.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-image">
+                            <img src="img/adven2.png" srcset="img/adven2x2.png 2x" width="85" height="85" alt="advantages">
+                        </div>
+                        <div class="advantages__item-content">
+                            <h3 class="advantages__item-header">EINREICHEN</h3>
+                            <p class="advantages__item-text">Die Fischerei-Berechtigungen können als Foto oder Scan unkompliziert hochgeladen werden.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-image">
+                            <img src="img/adven3.png" srcset="img/adven3x2.png 2x" width="85" height="85" alt="advantages">
+                        </div>
+                        <div class="advantages__item-content">
+                            <h3 class="advantages__item-header">BEZAHLEN</h3>
+                            <p class="advantages__item-text">Bequem mit Paypal, Kreditkarte oder Sofortüberweisung bezahlen und Angelkarte ausdrucken.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <h2 class="slider__header">Unser angelshop</h2>
+            <div class="slider__wrapper" id="slider--js">
+                <div class="slider__item-list">
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item1.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item2.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item3.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item4.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item-list">
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item1.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item2.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item3.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item4.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item-list">
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item1.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item2.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item3.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="img/img_item4.jpg" width="195" height="225" alt="item_image">
+                        </div>
+                        <div class="slider__item-content">
+                            <div class="slider__rating-holder">
+                                <div class="slider__passive-rating-holder">
+                                    <div class="slider__ratingBg"></div>
+                                    <div style="width: 0%;" class="slider__ratingMask"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item-text">
+                                <p class="slider__item-name">Volkspark Bokel</p>
+                                <p class="slider__item-price">5,00 €</p>
+                            </div>
+                            <div class="slider__item-buttons">
+                                <a href="#" class="slider__item-addBtn">Add to cart</a>
+                                <a href="#" class="slider__item-likeBtn"></a>
+                                <a href="#" class="slider__item-compareBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="footer__logotype-wrapper">
+                    <div class="footer__logotype-block">
+                        <a class="footer__logotype">
+                            <img src="img/logo_var_m_footer.png" srcset="img/logo_var_m_footer2x.png 2x" alt="Logotype" width="257" height="79">
+                        </a>
+                        <span class="footer__logotype-copyright">©FishHunter - 2016</span>
+                    </div>
+                </div>
+                <div class="footer__kontakt">
+                    <h3 class="footer__kontakt-header">Kontakt</h3>
+                    <ul class="footer__kontakt-list">
+                        <li class="footer__kontakt-item">
+                            <a href="#" class="footer__kontakt-link">Kontaktiere uns!</a>
+                        </li>
+                        <li class="footer__kontakt-item">
+                            <a href="#" class="footer__kontakt-link  footer__kontakt-link--mail">kontakt@fishhunter.de</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__information">
+                    <h3 class="footer__information-header">INFORMATION</h3>
+                    <ul class="footer__information-list">
+                        <li class="footer__information-item">
+                            <a href="#" class="footer__information-link">AGB</a>
+                        </li>
+                        <li class="footer__information-item">
+                            <a href="#" class="footer__information-link">Datenschutz</a>
+                        </li>
+                        <li class="footer__information-item">
+                            <a href="#" class="footer__information-link">Impressum</a>
+                        </li>
+                        <li class="footer__information-item">
+                            <a href="#" class="footer__information-link">Advanced Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+
+</html>

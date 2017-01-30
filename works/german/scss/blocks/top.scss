@@ -1,0 +1,141 @@
+.top {
+	@include container;
+	margin-bottom: 20px;
+}
+
+.top__header {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin: 35px 0 30px 0;
+	padding: 0;
+	text-align: center;
+	font-family: "latoregular", Arial, sans-serif;
+}
+
+.top__btn-wrapper {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 0;
+}
+
+.top__btn {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: $color-grey;
+	background-color: #f0f4f7;
+	font-size: 12px;
+	font-family: "latoregular", Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 6px 15px 5px 15px;
+	margin-right: 14px;
+	margin-bottom: 10px;
+	&:last-of-type {
+		margin-right: 0;
+	}
+	&:hover {
+		background-color: #e6e9eb;
+	}
+}
+
+.top__btn--active {
+	color: #ffffff;
+	background-color: $color-blue;
+	&:hover {
+		background-color: $color-blue;
+	}
+	cursor: auto;
+}
+
+.top__list {
+	font-size: 0;
+	text-align: center;
+}
+
+.top__item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	margin-right: 30px;
+	text-align: center;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+.top__item-img{
+	width: 270px;
+	height: 300px;
+}
+.top__rating-holder {
+    width: 76px;
+    position: relative;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.top__passive-rating-holder {
+    position: relative;
+    width: 76px;
+    height: 14px;
+    left: 0;
+    display: block;
+}
+
+.top__ratingBg {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 76px;
+	background-image: url("../img/star-no-active76x14.svg");
+	width: 76px;
+	z-index: 1;
+}
+
+.top__ratingMask {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 76px;
+    background-image: url("../img/star-active76x14.svg");
+	width: 76px;
+	z-index: 99;
+}
+.top__item-text-wrapper p{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "latoregular", Arial, sans-serif;
+	line-height: 30px;
+	color: $color-header;
+}
+
+@media #{$desktop-widths}{
+	.top {
+		width: $tablet-calc;
+	}
+	.top__item {
+		margin: 0 30px;
+		&:last-of-type {
+			margin-right: 30px;
+		}
+	}
+}
+@media #{$tablet-widths}{
+	.top {
+		width: $mobile-calc;
+	}
+}
+@media #{$mobile-widths}{
+	.top__item {
+		margin: 0;
+		&:last-of-type {
+			margin-right: 0px;
+		}
+	}
+}
